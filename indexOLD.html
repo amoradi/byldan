@@ -1,0 +1,473 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>blydan</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+  <link href='fonts/font.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+<!--   
+---------------------------------------------------------------
+
+[] byldan     										info | contact
+
+
+design, servicing 
+
+artistics,
+educationalists,
+gastronomists,
+capitalists,
+melody makers &
+happenings.
+
+
+------------------------------
+
+
+
+
+------------------------------
+
+contact
+
+phone 214.284.1318
+email hello@byldan.co
+
+USA FLAG
+
+------------------------------
+
+info
+
+byldan purveying digital design, web developement, and misc. is powered by Aaron Moradi. 
+(I'm the brains and hands behind this operation.) amoradi.github.io | twitter 
+
+
+-----------
+
+giving
+
+
+5% of revenues go to these places:
+
+human tafficking
+children
+
+
+-->
+<style>
+	html {
+		/*padding: 40px;*/
+    	background: #ececec;
+	}
+
+	body {
+		background: #ececec;
+		color: #4C4435;
+		/*color: #fff;*/
+		letter-spacing: .5px;
+		font-family: monospace;
+	}
+
+	footer {
+		height: 80px;
+	}
+
+	.row {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		overflow: hidden;
+	}
+
+	nav.row {
+		height: auto;
+		z-index: 1001;
+		position: relative;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	nav.row h1 {
+		margin-top: 0;
+	}
+
+	.hero {
+
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.content p:first-child:first-letter {
+		font-weight: 600;
+		font-size: 22px;
+		letter-spacing: 2px;
+		font-family: Georgia, serif;
+	}
+
+	h1,
+	h2,
+	h3, 
+	h4,
+	h5 {
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-family: 'Arimo', sans-serif;
+		font-weight: bold;
+		color: #FB6C25;
+		
+	}
+
+	a,
+	a:hover {
+		color: #FB6C25;
+	}
+
+	p a,
+	p a:hover {
+		color: royalblue;
+		font-weight: 600;
+	}
+
+	.container-fluid > * {
+		width: 100%;
+		max-width: 1480px;
+    	margin: 0 auto;
+		/*border: 44px solid #2546AB;*/
+
+	}
+	
+	.container-fluid {
+		padding: 0 20px;
+		background: cornsilk;
+		background: #FFE2DC;
+	}
+
+	/*.dark {
+		background: #20211E;
+		color: #eee;
+	}*/
+
+	.hero {
+		/*background: url(images/map-1560.jpg) center center no-repeat;*/
+		background-size: cover;
+		height: auto;
+		position: relative;
+		z-index: 999;
+		overflow: visible;
+	}
+
+	.hero h1 {
+		font-family: georgia;
+		text-transform: capitalize;
+		font-size: 125px;
+		color: #222;
+		font-style: italic;
+		padding-bottom: 30px;
+		text-indent: -50px;
+		padding-top: 80px;
+	}
+
+	.hero ul {
+		color: #222;
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+		font-size: 30px;
+	    font-family: "Arimo";
+	    font-weight: 700;
+	}
+
+	.hero ul li:first-letter {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.hero ul li span {
+		position: relative;
+		top: -3px;
+		padding-right: 10px;
+	}
+
+	.intro {
+		position: relative;
+		padding-bottom: 80px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.intro > * {
+		max-width: 1480px;
+		margin: 0 auto;
+	}
+
+	.intro:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		
+		z-index: 998;
+	}
+	.info-links {
+		margin-top: 20px;
+		color: #FB6C25;
+	}
+	.brown {
+		background: #ececec;
+	}
+	.work {
+		background: cornsilk;
+		color: #fff;
+		height: 400px;
+		display: none;
+		/* red #EF5656 */
+	}
+
+	.work h2 {
+		color: #fff;
+	}
+
+	.pics,
+	.pics .row {
+		padding: 0 !important;
+		display: none;
+	}
+	.pics .row {
+		margin-bottom: 40px;
+	}
+
+	.pics > div > div {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 300px;
+	}
+	.pic-1 {
+		background-image: url(images/goat.jpg);
+	}
+	.pic-2 {
+		background-image: url(images/sheep.jpg);
+	}
+	.pic-3 {
+		background-image: url(images/goat2.jpg);
+	}
+	.pic-4 {
+		background-image: url(images/pig.jpg);
+	}
+	.logo {
+		margin-left: -15px;
+	}
+
+	.component-intro-container {
+		
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background: #fff;
+	}
+
+	.intro-image {
+		display: block;
+		background: #fff url(images/flag.jpg) center center no-repeat;
+		background-size: cover;
+		min-height: 800px;
+		width: 100%;
+		z-index: 1000;
+		border: 25px #fff;
+		border-top: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.intro-image ~ * {
+		/*display: none;*/
+	}
+
+	.intro-image + div {
+		display: block;
+	}
+
+	.intro-image.static ~ * {
+		display: block;
+	}
+
+	.intro-image.static {
+		position: static;
+	}
+
+	.component-navigation {
+		position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    background: transparent;
+	}
+	
+	.intro-image {
+		display: none;
+	}
+	
+	@media screen and (max-width: 960px) {
+		.container-fluid {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.hero h1 {
+			font-size: 60px;
+			text-indent: 0px;
+		}
+	}
+
+	@media screen and (max-width: 1600px) {
+		.hero h1 {
+			text-indent: 0px;
+		}
+	}
+</style>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+	<div class="intro-image"></div>
+<div class="container-fluid component-navigation">
+	<nav class="row nav">
+			<h1 class="col-xs-10"><a href=""><img class="logo" src="images/logo.png" />byldan</a></h1>
+			<div class="col-xs-2 info-links"><a href="">info</a> | <a href=""class="">contact</a></div>
+		</nav>
+</div>	
+<div class="container-fluid component-intro-container">
+	<div class="intro">
+
+		<div class="row hero">
+			<div class="col-xs-12">
+				<h1>design for</h1>
+				<ul>
+				<li><span>&horbar;</span> artistics,</li>
+				<li><span>&horbar;</span> educationalists,</li>
+				<li><span>&horbar;</span> gastronomes,</li>
+				<li><span>&horbar;</span> capitalists,</li>
+				<li><span>&horbar;</span> melody makers &</li>
+				<li><span>&horbar;</span> happenings.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid pics">
+	<div class="row">
+		<div class="col-xs-12 col-sm-3 pic-1">
+			
+		</div>
+		<div class="col-xs-12 col-sm-3 pic-2">
+			
+		</div>
+		<div class="col-xs-12 col-sm-3 pic-3">
+			
+		</div>
+		<div class="col-xs-12 col-sm-3 pic-4">
+			
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 content">
+			<h2>so what</h2>
+			<p>Ydforem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididuanim id est laborumdforem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididuanim id est laborum LHgcitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute <a href="">irure dolor</a> in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+			<p>Utet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis auteecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+	</div>
+</div>
+
+<div class="container-fluid work">
+<div class="row">
+	<h2>work</h2>
+</div>
+</div>
+<div class="container-fluid brown">
+<div class="row">
+	<div class="col-xs-12 col-md-6">
+	<h2>info</h2>
+	<P>byldan, purveying digital design, web developement, and misc. is powered by Aaron Moradi. (I'm the brains and hands behind this operation.)</p>
+	</div>
+	<div class="col-xs-12 col-md-6">
+	<h2>contact</h2>
+
+	<p><strong>phone</strong> 214.284.1318</br /><strong>email</strong> hello@byldan.co</p>
+	</div>
+</div>
+</div>
+
+<footer></footer>
+  <script src="js/scripts.js"></script>
+  <script>
+	$(window).on('load', function() {
+		// setTimeout(function() {
+		// 	$('html,body').animate({scrollTop: 780},'slow');
+		// }, 5000);
+	
+	});
+
+  	(function() {
+  		$('.component-intro-container').each(function() {
+  			// console.log('u suck');
+
+  			var $mod = $(this);
+
+  			$('.intro-image').on('click', function() {
+  				$(this).addClass('static');
+  				$('html,body').animate({scrollTop: 800},'slow');
+  			});
+
+  		});
+  	})();
+
+  </script>
+</body>
+</html>
