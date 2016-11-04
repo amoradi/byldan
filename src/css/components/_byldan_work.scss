@@ -1,0 +1,39 @@
+.ByldanWork {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 27px;
+
+	span {
+	    background-color: tomato;
+	    width: 8px;
+	    height: 8px;
+	    display: block;
+	    float: left;
+	    margin: 1px;
+	    margin-top: 0;
+	}
+
+	span:first-child {
+	    position: relative;
+	    left: 10px;
+	}
+
+	span:first-child + span, 
+	span:first-child + span + span {
+	    visibility: hidden;
+	}
+
+	span:first-child + span + span + span,
+	span:first-child + span + span + span + span {
+	    position: relative;
+	    left: 5px;
+	}
+
+	span:first-child + span + span + span + span + span {
+	    background-color: transparent;   
+	}
+
+	span {
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,46 @@
+.Section {
+	margin-bottom: 6rem;
+
+	&-heading {
+		font-size: $normal-font;
+		letter-spacing: 1.5px;
+		margin-bottom: 2rem;
+	}
+
+	&-blockquote {
+    	margin-bottom: 4rem;
+	}
+
+	&-form {
+		> * {
+	    	margin-bottom: 2rem;
+		}
+
+		> input, 
+		textarea {
+		    border: 0;
+		    color: #111;
+		    width: 67%;
+		    padding: 1rem;
+		}
+
+		textarea {
+		    resize: vertical;
+		}
+
+		input[data-form-type="hidden"] {
+	    	display: none;
+		}
+	}
+	
+	&--intro{
+		margin-top: 7rem;
+
+		&-p {
+			font-size: $extra-large-font;
+			font-weight: bold;
+			font-family: $display-font;
+			line-height: $snug-lineheight;
+		}
+	}
+}

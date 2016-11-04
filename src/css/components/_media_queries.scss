@@ -1,0 +1,33 @@
+@media handheld, screen and (max-width: 960px) {
+    html {
+        font-size: 14px;
+    }
+    .TopNav-a {
+        font-size: 32px;
+    }
+}
+
+@media handheld, screen and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    .TopNav-a {
+        font-size: 32px;
+    }
+    .Section--intro {
+        font-size: 2rem;
+    }
+    .u-full-width {
+        padding: 0 .5rem;
+    }
+    .TopNav {
+        text-align: center;
+        position: static;
+    }
+    .TopNav-links {
+        float: none;
+    }
+    .TopNav-li {
+        padding: 0 .5rem;
+    }
+}

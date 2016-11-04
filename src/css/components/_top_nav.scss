@@ -1,0 +1,47 @@
+.TopNav {
+    text-align: left;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    margin-bottom: 3rem;
+    
+    &-a {
+        font-family: "Arimo", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        display: inline-block;
+        transition: all .1s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: tomato;
+            @extend %quick-fade-in-out;
+        }
+    }
+
+    &-links {
+        float: right;
+        list-style-type: none;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+    &-li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 1rem;
+
+        &-a {
+            font-family: "Arimo", sans-serif;
+            color: #111;
+        }
+    }
+
+    &-heading {
+        display: inline-block;
+    }
+}

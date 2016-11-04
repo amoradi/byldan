@@ -1,0 +1,29 @@
+html {
+    font-size: $base-font-size;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+a {
+	color: $royalblue;
+    text-decoration: none !important;
+    font-weight: 600;
+    @extend %quick-fade-in-out;
+
+    &:hover {
+    	text-decoration: none;
+    	color: tomato;
+    	@extend %quick-fade-in-out;
+    }
+}
+
+::-moz-selection {
+    background: $gold;
+}
+
+::selection {
+    background: $gold;
+}

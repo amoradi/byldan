@@ -1,0 +1,12 @@
+.Button {
+    background: royalblue;
+    border: 0;
+    color: $white;
+    padding: 0.5rem 2rem;
+    @extend %quick-fade-in-out;
+
+    &:hover {
+    	background: tomato;
+    	@extend %quick-fade-in-out;
+    }
+}
