@@ -1,5 +1,5 @@
 .Section {
-	margin-bottom: 6rem;
+	padding-top: 6rem;
 
 	&-heading {
 		font-size: $normal-font;
@@ -55,7 +55,7 @@
 	}
 	
 	&--intro{
-		margin-top: 7rem;
+		padding-top: 7rem;
 
 		&-p {
 			font-size: $extra-large-font;

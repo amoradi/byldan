@@ -5494,7 +5494,7 @@ a {
     display: inline-block; }
 
 .Section {
-  margin-bottom: 6rem; }
+  padding-top: 6rem; }
   .Section-heading {
     font-size: 1rem;
     letter-spacing: 1.5px;
@@ -5530,7 +5530,7 @@ a {
   .Section-calloutText {
     margin: 3rem 0; }
   .Section--intro {
-    margin-top: 7rem; }
+    padding-top: 7rem; }
     .Section--intro-p {
       font-size: 3.5rem;
       font-weight: bold;
@@ -5555,7 +5555,8 @@ a {
 .Footer {
   background: #d0ffe6;
   overflow: hidden;
-  padding: 4rem 0 2rem; }
+  padding: 4rem 0 2rem;
+  margin-top: 6rem; }
   .Footer--fixed {
     position: fixed;
     bottom: 0;
