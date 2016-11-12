@@ -11,10 +11,10 @@
 	
 	$email_from = "inquiries@byldan.co";
 	$email_subject = htmlspecialchars($visitor_name);
-	$email_body = "You have received a new message from the user:\n" .
+	$email_body = "New inquiry for Byldan!\n\n" .
 	"email: " . htmlspecialchars($visitor_email) . "\n" .
-	"name: " . htmlspecialchars($visitor_$name) . "\n" .
-	"phone: " . htmlspecialchars($visitor_$phone) . "\n" .
+	"name: " . htmlspecialchars($visitor_name) . "\n" .
+	"phone: " . htmlspecialchars($visitor_phone) . "\n" .
 	"message: " . htmlspecialchars($visitor_message);
 
 	$to = "hello@byldan.co";
