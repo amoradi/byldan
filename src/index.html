@@ -35,7 +35,12 @@
                 <li class="TopNav-li"><a href="#contact">contact</a></li>
                 <li class="TopNav-li"><a href="#mission">mission</a></li>
             </ul>
-            <h1 class="TopNav-heading"><a href="" class="TopNav-a byldan-logo-link ByldanLogo-link"><span class="ByldanLogo byldan-logo"></span>byldan</a></h1></nav>
+            <a href="/index.html" class="TopNav-a ByldanLogo-link">
+                <svg width="40" height="40" class="ByldanLogo--nav">
+                    <rect x="10" y="10" height="20" width="20" transform="rotate(45, 20, 20)"></rect>
+                </svg>byldan
+            </a>
+        </nav>
     </header>
     <section class="Section container row Section--intro">
         <div class="col-xs-12">
@@ -44,48 +49,63 @@
     </section>
     <section class="Section container row" id="work">
         <div class="col-xs-12">
-            <span class="ByldanWork byldan-work"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+            <svg width="40" height="40" class="ByldanWork">
+                <rect x="0" y="28" height="12" width="12"></rect>
+                <rect x="14" y="28" height="12" width="12"></rect>
+                <rect x="28" y="28" height="12" width="12"></rect>
+                <rect x="7" y="14" height="12" width="12"></rect>
+                <rect x="21" y="14" height="12" width="12"></rect>
+                <rect x="14" y="0" height="12" width="12"></rect>
+            </svg>
             <h2 class="Section-heading">work</h2>
             <blockquote class="Section-blockquote">Perfection is achieved, not when there is nothing left to add, but when there is nothing left to remove.<span class="u-bq-author">Antoine de Saint-Exupéry</span></blockquote>
         </div>
     </section>
     <section class="Section container row" id="process">
         <div class="col-xs-12">
-        <span class="ByldanProcess"></span>
+        <svg width="40" height="40" class="ByldanProcess">
+           <circle cx="20" cy="20" r="16" />
+        </svg>
         <h2 class="Section-heading">process</h2>
         <blockquote class="Section-blockquote">
             Great things are done by a series of small things brought together.<span class="u-bq-author">Vincent Van Gogh</span>
         </blockquote>
         </div>
     </section>
-    <!-- <section>
-        <h2 class="Section-heading">news</h2>
-	</section> -->
     <section class="Section container row" id="contact">
         <div class="col-xs-12">
-            <span class="ByldanContact"></span>
+            <svg width="40" height="40" class="ByldanContact">
+                <polygon points="5,0 35,0 20,30"/>
+            </svg>
             <h2 class="Section-heading">contact</h2>
-            <form class="Section-form">
-                <input type="text" placeholder="name"/><br/>
-                <input type="email" placeholder="email"/><br />
-                <input type="phone" placeholder="phone #" /><br />
-                <textarea placeholder="How can we help?"></textarea><br />
-                <button class="Button" type="submt">get in touch</button>
+            <p class="Section-calloutText">Send over your spurrings, questions & whatever you like below.</p>
+            <form class="Section-form" method="post" name="byldan-contact-form" action="/scripts/form-to-email.php">
+                <label for="name">name</label>
+                <input type="text" placeholder="enter your name" name="name" required /><br/>
+                <label for="email">email</label>
+                <input type="email" placeholder="enter your email" name="email" required /><br />
+                <label for="phone">phone number</label>
+                <input type="phone" placeholder="enter your phone #" name="phone" /><br />
+                <label for="message">Comments</label>
+                <textarea placeholder="Spill your guts." name="message"></textarea><br />
+                <button class="Button" type="submit" name="submit">get in touch</button>
                 <input type="text" data-form-type="hidden" />
             </form> 
         </div>
     </section>
      <section class="Section container row" id="mission">
         <div class="col-xs-12">
-        <span class="ByldanLogo ByldanLogo--in-page byldan-logo"></span>
+        <svg width="40" height="40" class="ByldanLogo--in-page">
+             <rect x="10" y="10" height="20" width="20" transform="rotate(45, 20, 20)"></rect>
+        </svg>
         <h2 class="Section-heading">mission</h2>
         <blockquote class="Section-blockquote">Fortune favors the audacious.<span class="u-bq-author">Desiderius Erasmus</span></blockquote>
-        <p>Our mission is to create & purvey American-made, high-quality websites & software for artistics, educationalists, gastronomes, capitalists, melody makers, happenings & others.</p>
+        <p class="Section-text">Byldan's mission is to create & purvey <span class="u-highlight"><span class="u-red">American</span>-<span class="u-blue">made</span></span>, high-quality websites & software for artistics, educationalists, gastronomes, capitalists, melody makers, happenings & others!</p>
+        <p class="Section-text">What's in the name, you ask? Well, you see, Byldan can mean to build, or to make bold, encourage, cheer &mdash; all of these things encompass Byldan!</p>
         </div>
     </section>
-    <footer class="Footer--fixed u-full-width">
-        <!-- <div class="col-xs-12"><p>&copy; 2016 byldan - Started by Aaron Moradi to spread the knowledge of the Holy.</p></div> -->
-        <div class="col-xs-12"><p>&copy; 2016 byldan | 214.284.1318<!-- - Started by Aaron Moradi, to help artistics, educationalists, gastronomes, capitalists, melody makers & happenings. --></p></div>
+    <footer class="Footer">
+        <div class="col-xs-12"><p>&copy; 2016 byldan (a brainchild of <a target="_blank" href="https://twitter.com/AaronMoradi">Aaron Moradi</a>)</div>
     </footer>
 
 </body>

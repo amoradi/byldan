@@ -1,18 +1,20 @@
 .ByldanLogo {
-	transform: rotate(45deg);
-    display: inline-block;
-    top: 20px;
-    width: 20px;
-    height: 20px;
-    background-color: $tomato;
-    margin-right: 15px;
-
 	&-link,
 	&:hover {
-		color: $almost-black;
+		color: $almost-black !important;
 	}
 
-	&--in-page {
+	&--in-page,
+	&--nav {
 		margin-right: 0;
+		rect {
+			fill: $tomato;
+		}
+	}
+
+	&--nav {
+		position: relative;
+		margin-right: 7px;
+	    top: 7px;
 	}
 }

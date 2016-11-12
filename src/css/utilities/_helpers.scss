@@ -14,9 +14,22 @@
 
 .u-theme {
 	background-color: $mintcream;
-	color: #111;
+	color: $almost-gray;
 	letter-spacing: .5px;
 	font-family: monospace;
 	text-align: center;
-	padding-bottom: 4rem;
+	padding-bottom: 0;
+}
+
+.u-red {
+	color: $red;
+}
+
+.u-blue {
+	color: $royalblue;
+}
+
+.u-highlight {
+	background: $white;
+	padding: 0.25rem 0.75rem;
 }

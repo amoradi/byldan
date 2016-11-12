@@ -5,6 +5,7 @@ html {
 p {
     font-size: 1rem;
     line-height: 1.75;
+    margin-bottom: 2rem;
 }
 
 a {
@@ -13,9 +14,12 @@ a {
     font-weight: 600;
     @extend %quick-fade-in-out;
 
-    &:hover {
+    &:hover,
+    &:visited,
+    &:active,
+    &:focus {
     	text-decoration: none;
-    	color: tomato;
+    	color: $lightblue;
     	@extend %quick-fade-in-out;
     }
 }

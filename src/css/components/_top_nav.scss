@@ -4,11 +4,11 @@
     left: 0;
     right: 0;
     z-index: 1;
-    top: 0;
+    top: 0.5rem;
     margin-bottom: 3rem;
     
     &-a {
-        font-family: "Arimo", sans-serif;
+        font-family: $display-font;
         font-weight: bold;
         font-size: 2rem;
         display: inline-block;
@@ -17,7 +17,7 @@
 
         &:hover {
             text-decoration: none;
-            color: tomato;
+            color: $lightblue;
             @extend %quick-fade-in-out;
         }
     }
@@ -33,11 +33,17 @@
     &-li {
         display: inline-block;
         vertical-align: middle;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
+        letter-spacing: 1px;
+        font-family: $display-font;
 
         &-a {
-            font-family: "Arimo", sans-serif;
-            color: #111;
+            font-family: $display-font;
+            color: $almost-black;
+        }
+
+        @media handheld, screen and (max-width: $mobile-max) {
+            letter-spacing: 0;
         }
     }
 

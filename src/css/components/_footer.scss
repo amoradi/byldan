@@ -1,8 +1,12 @@
 .Footer {
+	background: $brightmintcream;
+	overflow: hidden;
+	padding: 4rem 0 2rem;
+
 	&--fixed {
 	    position: fixed;
 	    bottom: 0;
-	    background: #fff;
+	    background: $brightmintcream;
 	    right: 0;
 	    left: 0;
 	    text-align: center;

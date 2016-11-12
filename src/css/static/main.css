@@ -5373,7 +5373,7 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-a, a:hover, .TopNav-a:hover, .Button, .Button:hover {
+a, a:hover, a:visited, a:active, a:focus, .TopNav-a:hover, .Button, .Button:hover {
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out; }
 
@@ -5382,15 +5382,16 @@ html {
 
 p {
   font-size: 1rem;
-  line-height: 1.75; }
+  line-height: 1.75;
+  margin-bottom: 2rem; }
 
 a {
-  color: royalblue;
+  color: #5d80ea;
   text-decoration: none !important;
   font-weight: 600; }
-  a:hover {
+  a:hover, a:visited, a:active, a:focus {
     text-decoration: none;
-    color: tomato; }
+    color: #7596fb; }
 
 ::selection {
   background: gold; }
@@ -5408,71 +5409,49 @@ a {
 
 .u-theme {
   background-color: mintcream;
-  color: #111;
+  color: #444;
   letter-spacing: .5px;
   font-family: monospace;
   text-align: center;
-  padding-bottom: 4rem; }
+  padding-bottom: 0; }
+
+.u-red {
+  color: #ff0000; }
+
+.u-blue {
+  color: #5d80ea; }
+
+.u-highlight {
+  background: #fff;
+  padding: 0.25rem 0.75rem; }
 
 .container {
   max-width: 800px;
   margin: 0 auto; }
 
-.ByldanLogo {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  display: inline-block;
-  top: 20px;
-  width: 20px;
-  height: 20px;
-  background-color: tomato;
-  margin-right: 15px; }
-  .ByldanLogo-link, .ByldanLogo:hover {
-    color: #111; }
-  .ByldanLogo--in-page {
-    margin-right: 0; }
+.ByldanLogo-link, .ByldanLogo:hover {
+  color: #111 !important; }
 
-.ByldanWork {
-  vertical-align: bottom;
-  display: inline-block;
-  width: 27px; }
-  .ByldanWork span {
-    background-color: tomato;
-    width: 8px;
-    height: 8px;
-    display: block;
-    float: left;
-    margin: 1px;
-    margin-top: 0; }
-  .ByldanWork span:first-child {
-    position: relative;
-    left: 10px; }
-  .ByldanWork span:first-child + span,
-  .ByldanWork span:first-child + span + span {
-    visibility: hidden; }
-  .ByldanWork span:first-child + span + span + span,
-  .ByldanWork span:first-child + span + span + span + span {
-    position: relative;
-    left: 5px; }
-  .ByldanWork span:first-child + span + span + span + span + span {
-    background-color: transparent; }
-  .ByldanWork span {
-    margin-right: 0; }
+.ByldanLogo--in-page, .ByldanLogo--nav {
+  margin-right: 0; }
+  .ByldanLogo--in-page rect, .ByldanLogo--nav rect {
+    fill: tomato; }
 
-.ByldanContact {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 20px solid tomato;
-  display: inline-block; }
+.ByldanLogo--nav {
+  position: relative;
+  margin-right: 7px;
+  top: 7px; }
 
-.ByldanProcess {
-  border-radius: 16px;
-  border: 3px solid tomato;
-  width: 32px;
-  height: 32px;
-  display: inline-block; }
+.ByldanWork rect {
+  fill: tomato; }
+
+.ByldanContact polygon {
+  fill: tomato; }
+
+.ByldanProcess circle {
+  stroke: tomato;
+  stroke-width: 4;
+  fill: none; }
 
 .TopNav {
   text-align: left;
@@ -5480,7 +5459,7 @@ a {
   left: 0;
   right: 0;
   z-index: 1;
-  top: 0;
+  top: 0.5rem;
   margin-bottom: 3rem; }
   .TopNav-a {
     font-family: "Arimo", sans-serif;
@@ -5492,7 +5471,7 @@ a {
     text-decoration: none; }
     .TopNav-a:hover {
       text-decoration: none;
-      color: tomato; }
+      color: #7596fb; }
   .TopNav-links {
     float: right;
     list-style-type: none;
@@ -5502,10 +5481,15 @@ a {
   .TopNav-li {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 1rem; }
+    padding: 0 0.5rem;
+    letter-spacing: 1px;
+    font-family: "Arimo", sans-serif; }
     .TopNav-li-a {
       font-family: "Arimo", sans-serif;
       color: #111; }
+    @media handheld, screen and (max-width: 768px) {
+      .TopNav-li {
+        letter-spacing: 0; } }
   .TopNav-heading {
     display: inline-block; }
 
@@ -5514,45 +5498,72 @@ a {
   .Section-heading {
     font-size: 1rem;
     letter-spacing: 1.5px;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    margin-top: 0.5rem; }
   .Section-blockquote {
     margin-bottom: 4rem; }
   .Section-form > * {
     margin-bottom: 2rem; }
-  .Section-form > input,
-  .Section-form textarea {
+  .Section-form input,
+  .Section-form textarea,
+  .Section-form label {
     border: 0;
-    color: #111;
+    color: #444;
     width: 67%;
     padding: 1rem; }
+    @media handheld, screen and (max-width: 768px) {
+      .Section-form input,
+      .Section-form textarea,
+      .Section-form label {
+        width: 95%; } }
+  .Section-form label {
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    font-weight: 500; }
   .Section-form textarea {
     resize: vertical; }
   .Section-form input[data-form-type="hidden"] {
     display: none; }
+  .Section-text {
+    font-size: 1.15rem; }
+  .Section-calloutText {
+    margin: 3rem 0; }
   .Section--intro {
     margin-top: 7rem; }
     .Section--intro-p {
       font-size: 3.5rem;
       font-weight: bold;
       font-family: "Arimo", sans-serif;
-      line-height: 1.2; }
+      line-height: 1.2;
+      color: #111; }
+      @media handheld, screen and (max-width: 768px) {
+        .Section--intro-p {
+          font-size: 2.5rem; } }
+    @media handheld, screen and (max-width: 768px) {
+      .Section--intro {
+        margin-top: 4rem; } }
 
 .Button {
-  background: royalblue;
+  background: #5d80ea;
   border: 0;
   color: #fff;
   padding: 0.5rem 2rem; }
   .Button:hover {
-    background: tomato; }
+    background: #7596fb; }
 
-.Footer--fixed {
-  position: fixed;
-  bottom: 0;
-  background: #fff;
-  right: 0;
-  left: 0;
-  text-align: center;
-  padding-top: 1rem; }
+.Footer {
+  background: #d0ffe6;
+  overflow: hidden;
+  padding: 4rem 0 2rem; }
+  .Footer--fixed {
+    position: fixed;
+    bottom: 0;
+    background: #d0ffe6;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 1rem; }
 
 @media handheld, screen and (max-width: 960px) {
   html {

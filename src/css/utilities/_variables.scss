@@ -1,10 +1,15 @@
 // colors
 $almost-black: #111;
+$almost-gray: #444;
 $tomato: tomato;
-$royalblue: royalblue;
+$red: #ff0000;
+$royalblue: #5d80ea;
+$lightblue: #7596fb;
 $gold: gold;
 $white: #fff;
 $mintcream: mintcream;
+$brightmintcream: #d0ffe6;
+$lightest-blue: #f1fdff;
 
 // fonts
 $display-font: "Arimo", sans-serif;
@@ -13,7 +18,12 @@ $display-font: "Arimo", sans-serif;
 $base-font-size: 16px;
 $small-font: 0.85rem;
 $normal-font: 1rem;
+$a-touch-above-normal: 1.15rem;
+$large-font: 2.5rem;
 $extra-large-font: 3.5rem;
 
 // lineheight
 $snug-lineheight: 1.2;
+
+// breakpoints
+$mobile-max: 768px;
