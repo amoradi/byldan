@@ -5542,7 +5542,8 @@ a {
           font-size: 2.5rem; } }
     @media handheld, screen and (max-width: 768px) {
       .Section--intro {
-        margin-top: 4rem; } }
+        margin-top: 4rem;
+        padding-top: 0; } }
 
 .Button {
   background: #5d80ea;

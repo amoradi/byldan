@@ -71,6 +71,7 @@
 
 		@media handheld, screen and (max-width: $mobile-max) {
 			margin-top: 4rem;
+			padding-top: 0;
 		}
 	}
 }
