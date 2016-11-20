@@ -5542,6 +5542,8 @@ a {
       @media handheld, screen and (max-width: 768px) {
         .Section--intro-p {
           font-size: 2.5rem; } }
+    .Section--intro-text {
+      font-size: 1.15rem; }
     @media handheld, screen and (max-width: 768px) {
       .Section--intro {
         margin-top: 4rem;

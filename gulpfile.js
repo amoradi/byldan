@@ -1,10 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-
-gulp.task('default', function() {
-  // place code for your default task here
-});
+const jade = require('gulp-jade');
 
 gulp.task('styles', function() {
     gulp.src('src/css/*.scss')
@@ -12,18 +9,24 @@ gulp.task('styles', function() {
         .pipe(autoprefixer({
             browsers: ['> 5%']
         }))
-        .pipe(gulp.dest('./src/css/static/'));
-
-    // gulp.src('src/css/static/main.css')
-    //     .pipe(autoprefixer({
-    //         browsers: ['last 2 versions']
-    //     }));
+        .pipe(gulp.dest('./dist/css/static/'));
 });
 
-// gulp.task('default', () =>
-//     gulp.src('src/css/static/main.css')
-//         .pipe(autoprefixer({
-//             browsers: ['last 2 versions']
-//         }))
-//         //.pipe(gulp.dest('dist'))
-// );
+gulp.task('jade', function() {
+    gulp.src('./src/**/**/*.jade')
+
+    gulp.src('./src/*.jade')
+        .pipe(jade({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./dist/'))
+})
+
+gulp.task('watch', function() {
+    gulp.watch('./src/**/*.jade', ['jade']);
+    gulp.watch('./src/**/**/*.jade', ['jade']);
+    gulp.watch('./src/css/*.scss', ['styles']);
+    gulp.watch('./src/css/**/*.scss', ['styles']);
+});
+
+gulp.task('default', ['styles', 'jade', 'watch']);

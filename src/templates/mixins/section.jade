@@ -1,0 +1,21 @@
+mixin section(id, icon, heading, quote, quoteAuthor, textAry)
+  section(class="Section container row", id="#{id}")
+    div.col-xs-12
+      if icon == "pyramid-block"
+        include ../images/pyramid-block
+      else if icon == "circle"
+        include ../images/circle
+      else if icon == "upside-down-triangle"
+        include ../images/upside-down-triangle
+      else if icon == "logo"
+        include ../images/logo
+      h2.Section-heading #{heading}
+      if quoteAuthor == "contact"
+        p.Section-calloutText #{quote}
+        include ../partials/contact
+      else
+        blockquote.Section-blockquote #{quote}
+          span.u-bq-author #{quoteAuthor}
+      if textAry instanceof Array
+        - each item in textAry
+          p.Section-text!= item

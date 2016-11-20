@@ -1,0 +1,15 @@
+form(class="Section-form", method="post", name="byldan-contact-form", action="/scripts/form-to-email.php")
+    label(for="name") name
+    input(type="text", placeholder="enter your name", name="name", required)
+    br
+    label(for="email") email
+    input(type="email", placeholder="enter your email", name="email", required)
+    br
+    label(for="phone") phone number
+    input(type="phone", placeholder="enter your phone #", name="phone")
+    br
+    label(for="message") Comments
+    textarea(placeholder="Spill your guts.", name="message")
+    br
+    button(class="Button", type="submit", name="submit") get in touch
+    input(type="text", data-form-type="hidden")

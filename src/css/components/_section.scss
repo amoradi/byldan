@@ -10,6 +10,7 @@
 
 	&-blockquote {
     	margin-bottom: 4rem;
+    	text-align: left;
 	}
 
 	&-form {
@@ -48,6 +49,7 @@
 
 	&-text {
 		font-size: $a-touch-above-normal;
+		text-align: left;
 	}
 
 	&-calloutText {
@@ -67,6 +69,10 @@
 			@media handheld, screen and (max-width: $mobile-max) {
 		    	font-size: $large-font;
 		    }
+		}
+
+		&-text {
+			font-size: $a-touch-above-normal;
 		}
 
 		@media handheld, screen and (max-width: $mobile-max) {
