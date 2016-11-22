@@ -5405,7 +5405,8 @@ a {
 .u-bq-author {
   display: block;
   font-size: 0.85rem;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  color: inherit; }
 
 .u-theme {
   background-color: mintcream;

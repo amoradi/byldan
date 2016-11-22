@@ -15,7 +15,7 @@ mixin section(id, icon, heading, quote, quoteAuthor, textAry)
         include ../partials/contact
       else
         blockquote.Section-blockquote #{quote}
-          span.u-bq-author #{quoteAuthor}
+          footer.u-bq-author #{quoteAuthor}
       if textAry instanceof Array
         - each item in textAry
           p.Section-text!= item
