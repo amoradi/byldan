@@ -1,6 +1,6 @@
 mixin introSection(text, copy)
   section(class="Section container row Section--intro", id="index")
-    div.col-xs-12
+    div(class="Section-content col-xs-12")
       p(class="Section--intro-p u-center") #{text}
       - if (typeof(copy) == "string")
         p(class="Section--intro-text")!= copy

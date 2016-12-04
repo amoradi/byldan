@@ -1,5 +1,13 @@
 .Section {
 	padding-top: 6rem;
+	width: 100%;
+	max-width: 100%;
+
+	&-content {
+		float: none;
+		max-width: 860px;
+		margin: 0 auto;
+	}
 
 	&-heading {
 		font-size: $normal-font;

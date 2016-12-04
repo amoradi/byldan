@@ -1,6 +1,6 @@
 mixin section(id, icon, heading, quote, quoteAuthor, textAry)
   section(class="Section container row", id="#{id}")
-    div.col-xs-12
+    div(class="Section-content col-xs-12")
       if icon == "pyramid-block"
         include ../images/pyramid-block
       else if icon == "circle"

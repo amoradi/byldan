@@ -5495,7 +5495,13 @@ a {
     display: inline-block; }
 
 .Section {
-  padding-top: 6rem; }
+  padding-top: 6rem;
+  width: 100%;
+  max-width: 100%; }
+  .Section-content {
+    float: none;
+    max-width: 860px;
+    margin: 0 auto; }
   .Section-heading {
     font-size: 1rem;
     letter-spacing: 1.5px;
