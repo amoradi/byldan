@@ -28,6 +28,11 @@
         margin-top: 20px;
         margin-bottom: 10px;
         padding-left: 0;
+
+        @media handheld, screen and (max-width: $mobile-max) {
+            margin-top: 0;
+            padding-top: 20px;
+        }
     }
 
     &-li {
@@ -49,5 +54,10 @@
 
     &-heading {
         display: inline-block;
+    }
+
+    @media handheld, screen and (max-width: $mobile-max) {
+        margin-bottom: 0;
+        background: $white;
     }
 }

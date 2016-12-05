@@ -1,5 +1,6 @@
 .Section {
 	padding-top: 6rem;
+	padding-bottom: 4rem;
 	width: 100%;
 	max-width: 100%;
 
@@ -66,16 +67,18 @@
 	
 	&--intro{
 		padding-top: 7rem;
+		padding-bottom: 4rem;
+		background: $white;
 
 		&-p {
-			font-size: $extra-large-font;
+			font-size: $larger-font;
 			font-weight: bold;
 			font-family: $display-font;
 			line-height: $snug-lineheight;
 			color: $almost-black;
 
 			@media handheld, screen and (max-width: $mobile-max) {
-		    	font-size: $large-font;
+		    	font-size: $two-x-normal;
 		    }
 		}
 
@@ -84,8 +87,8 @@
 		}
 
 		@media handheld, screen and (max-width: $mobile-max) {
-			margin-top: 4rem;
-			padding-top: 0;
+			padding-top: 4rem;
+			margin-top: 0;
 		}
 	}
 }

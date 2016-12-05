@@ -5426,6 +5426,18 @@ a {
   background: #fff;
   padding: 0.25rem 0.75rem; }
 
+.u-resp-img {
+  max-width: 100%; }
+
+.u-bkgr-azure {
+  background-color: azure; }
+
+.u-bkgr-honeydew {
+  background-color: honeydew; }
+
+.u-bkgr-seashell {
+  background-color: seashell; }
+
 .container {
   max-width: 860px;
   margin: 0 auto; }
@@ -5479,6 +5491,10 @@ a {
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 0; }
+    @media handheld, screen and (max-width: 768px) {
+      .TopNav-links {
+        margin-top: 0;
+        padding-top: 20px; } }
   .TopNav-li {
     display: inline-block;
     vertical-align: middle;
@@ -5493,9 +5509,14 @@ a {
         letter-spacing: 0; } }
   .TopNav-heading {
     display: inline-block; }
+  @media handheld, screen and (max-width: 768px) {
+    .TopNav {
+      margin-bottom: 0;
+      background: #fff; } }
 
 .Section {
   padding-top: 6rem;
+  padding-bottom: 4rem;
   width: 100%;
   max-width: 100%; }
   .Section-content {
@@ -5539,22 +5560,24 @@ a {
   .Section-calloutText {
     margin: 3rem 0; }
   .Section--intro {
-    padding-top: 7rem; }
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    background: #fff; }
     .Section--intro-p {
-      font-size: 3.5rem;
+      font-size: 2.7rem;
       font-weight: bold;
       font-family: "Arimo", sans-serif;
       line-height: 1.2;
       color: #111; }
       @media handheld, screen and (max-width: 768px) {
         .Section--intro-p {
-          font-size: 2.5rem; } }
+          font-size: 2rem; } }
     .Section--intro-text {
       font-size: 1.15rem; }
     @media handheld, screen and (max-width: 768px) {
       .Section--intro {
-        margin-top: 4rem;
-        padding-top: 0; } }
+        padding-top: 4rem;
+        margin-top: 0; } }
 
 .Button {
   background: #5d80ea;
@@ -5565,10 +5588,9 @@ a {
     background: #7596fb; }
 
 .Footer {
-  background: #d0ffe6;
+  background: #fff;
   overflow: hidden;
-  padding: 4rem 0 2rem;
-  margin-top: 6rem; }
+  padding: 6rem 1rem; }
   .Footer--fixed {
     position: fixed;
     bottom: 0;

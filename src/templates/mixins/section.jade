@@ -1,5 +1,5 @@
-mixin section(id, icon, heading, quote, quoteAuthor, textAry)
-  section(class="Section container row", id="#{id}")
+mixin section(bkgrClass, id, icon, heading, quote, quoteAuthor, textAry)
+  section(class="Section container row #{bkgrClass}", id="#{id}")
     div(class="Section-content col-xs-12")
       if icon == "pyramid-block"
         include ../images/pyramid-block
