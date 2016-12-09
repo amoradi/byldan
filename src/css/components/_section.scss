@@ -20,6 +20,7 @@
 	&-blockquote {
     	margin-bottom: 4rem;
     	text-align: left;
+    	border-color: $transparent-gray;
 	}
 
 	&-form {
@@ -78,7 +79,7 @@
 			color: $almost-black;
 
 			@media handheld, screen and (max-width: $mobile-max) {
-		    	font-size: $two-x-normal;
+		    	font-size: $one-half-x-normal;
 		    }
 		}
 

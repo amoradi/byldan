@@ -1,18 +1,21 @@
 // colors
+$darken-scale: 5%;
 $almost-black: #111;
 $almost-gray: #444;
+$transparent-gray: rgba(0,0,0,.04);
 $tomato: tomato;
 $red: #ff0000;
 $royalblue: #5d80ea;
 $lightblue: #7596fb;
 $gold: gold;
 $white: #fff;
-$mintcream: mintcream;
-$brightmintcream: #d0ffe6;
+$mintcream: darken(mintcream, $darken-scale);
+$brightmintcream: darken(#d0ffe6, $darken-scale);
 $lightest-blue: #f1fdff;
-$azure: azure;
-$honeydew: honeydew;
-$seashell: seashell;
+$azure: darken(azure, $darken-scale);
+$honeydew: darken(honeydew, $darken-scale);
+$pale-yellow: #fff9d7;
+$seashell: darken(seashell, $darken-scale);
 
 // fonts
 $display-font: "Arimo", sans-serif;
@@ -22,6 +25,7 @@ $base-font-size: 16px;
 $small-font: 0.85rem;
 $normal-font: 1rem;
 $a-touch-above-normal: 1.15rem;
+$one-half-x-normal: 1.5rem;
 $two-x-normal: 2rem;
 $large-font: 2.5rem;
 $larger-font: 2.7rem;

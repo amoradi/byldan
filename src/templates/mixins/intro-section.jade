@@ -1,7 +1,7 @@
 mixin introSection(image, text, copy)
   section(class="Section container row Section--intro", id="index")
     div(class="Section-content col-xs-12")
-      img(src="#{image}", class="u-resp-img")
+      img(src="#{image}", class="u-resp-img u-80-percent")
       p(class="Section--intro-p u-center") #{text}
       - if (typeof(copy) == "string")
         p(class="Section--intro-text")!= copy

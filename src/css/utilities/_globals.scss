@@ -15,7 +15,6 @@ a {
     @extend %quick-fade-in-out;
 
     &:hover,
-    &:visited,
     &:active,
     &:focus {
     	text-decoration: none;
